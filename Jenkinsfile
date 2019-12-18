@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh 'pyinstaller hello.py'
+      }
+    }
+
   }
 }
